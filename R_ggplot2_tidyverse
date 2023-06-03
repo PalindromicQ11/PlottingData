@@ -1,0 +1,17 @@
+Plotting_R
+
+if (! packages('pacman')) install.package('pacman')
+pacman::p_load('tidyverse', 'ggplot2', 'ggally', 'rio', 'pacman', 'dplyr', 'dendrogram', 'tidyr', '
+
+"""upload data from path| directly from url & create tibbles"""
+df %<>% load.table('https://catalog.data.gov/dataset/alzheimers-disease-and-healthy-aging-data/resource/b2443e45-68aa-4004-b97a-e62c4c28502f/Dfiles/Alheimer.csv' sep=',', header=True)
+   %<>% to_tibbles()
+   %<>% info()
+   %<>% head(10)
+   %<>% mutate([col])
+   %<>% ggplot2(df, kind=dendrogram, 
+   + geom_aes(alpha=3)
+   + density()
+   + 
+   
+   

@@ -1,0 +1,53 @@
+PlottingPylab.py
+#1 import packages
+import datetime
+Import pandas as pd
+import numpy as np
+import matplotlib as mlb
+import matplotlib.pyplot as plt
+pyplot.express as pe
+
+#2 create class:
+Class PlotFigure:
+    figure = figure.plt(figsize=(12,6),
+                    dpi=100, ls = '++++', Edgecolor = 'r',
+                    color = 'b', loc='best')
+                    .figtext(0.99, 0.01, u'\u00a9 PalindromicQ Designs 2023',
+                    c = 'r'
+                    prop={'family':'Monotype Corsiva'}
+                    fontsize= 11,
+                    va='ha',
+                    alphaframe=0.3
+                    loc= 'bottom right')
+                    .grid(true)
+                    .Legend(title=' ', xlabel='', ylabel=''
+                    )
+    
+    Def features(Additional_axes, Additional_Subplots):
+        fig, ax = figure.add_axes(['l','t','r','b'])
+        figs, axes = figure.subplots(nrows='4', ncols='1',
+                                 ('Nope','EnjoyLife','GotoVenues','CatchSomeMarlins'),
+                                 ('b','r','y','g'))
+        figsMosaic, axesMosaic = figs.subplots_mosaic("""['First picture' , 'Second Picture','Third Picture', 
+                                'Fourth Picture'], loc='best', fontsize=11, c='r' """)
+        For i in figsMosaic do:
+            axes[:-1] = axes[i]
+            
+        labelled_pic = ['
+        
+        #Iterate through labelled_pic
+        # For i, o in labelled_pic do:
+           
+            
+            
+    Def sample()  
+        x = pd.period_range(datetime.now(), period=300, freg='d')
+        x = x.to_datetime().to_pyDatetime()
+        y = np.random.randn(300).cumsum(0)
+        plot=fig.plot(x, y)
+        x_ticks[]
+        
+        
+        
+                 
+                  

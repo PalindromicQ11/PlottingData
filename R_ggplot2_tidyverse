@@ -9,9 +9,12 @@ df %<>% load.table('https://catalog.data.gov/dataset/alzheimers-disease-and-heal
    %<>% info()
    %<>% head(10)
    %<>% mutate([col])
+df_y  %<>% df(-col[])
+df_x  %<>% df.merge(col[]=c(col[] + col[]))
    %<>% ggplot2(df, kind=dendrogram, 
    + geom_aes(alpha=3)
    + density()
-   + 
+   + labs(title='')
    
+ 
    

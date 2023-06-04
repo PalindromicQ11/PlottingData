@@ -14,7 +14,8 @@ Class PlotFigure:
     figure = figure.plt(figsize=(12,6),
                     dpi=100, ls = '++++', Edgecolor = 'r',
                     color = 'b', loc='best',
-                    tight_layout= true)
+                    tight_layout= true,
+                    orientation = ' MTFO' )
                     .figtext(0.99, 0.01, u'\u00a9 PalindromicQ Designs 2023'
                     c = 'r'
                     prop={'family':'Monotype Corsiva'}

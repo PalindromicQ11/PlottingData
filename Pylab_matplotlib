@@ -8,6 +8,7 @@ import matplotlib as mlb
 import matplotlib.pyplot as plt
 import matplotlib.pyplot.make_subplot 
 import pyplot.express as pe
+from matplotlib.color import listedpastel
 
 #2 create class:
 Class PlotFigure:
@@ -28,34 +29,34 @@ Class PlotFigure:
                     )
     
     Def features(fig, ax, figs, axes):
-        fig, ax = figure.add_axes(['l','t','r','b'])
+        fig, ax = figure.add_axes(['l=0.15','t=0.15','r='0.3','b=0.3'])
         figs, axes = figure.make_subplot(nrows='4', ncols='1',
                                  sharex= true, sharey=true)
                            .subplots_mosaic("""['First picture' , 'Second Picture','Third Picture', 
                                 'Fourth Picture'], loc='best', fontsize=11, c='r' """)
                            .subplot_set(title=' ', xlabel= ' ', ylabel = ' ')
                            )
-       
-        labelled_pic = ('Nope','EnjoyLife','donated','CatchSomeMarlins'),
-                                 ('b','r','y','g'))
         For i in figsMosaic do:
             axes[:-1] = axes[i]
-            
-        #Iterate through labelled_pic
-        # For i, o in labelled_pic do:
-     
+               
+        labelled_pic = [y, for y in labelled_pic zip(y.tranpose(('Nope','EnjoyLife','Donated','CatchSomeMarlins'),
+                                 ('b','r','y','g'))]            
+        
      def PlotGraphs(types):
          @PlotGraphs.wraps(types)
-         plot= figure.plot_heatmap(x=' ', y='')
+         plot= figure.plot_heatmap(x=' ', y='', xminimum = ' ', xmaximum = ' ')
                .features(figs)
                
             
     Def sample():
         x = pd.period_range(datetime.now(), period=300, freg='d')
-        x = x.to_time().to_pyDatetime()
+        x = x.to_timestamp().to_pyDatetime()
         y = np.random.randn(300).cumsum(0)
-        plot=fig.plot(x, y)
+        plot=fig.plot(x,y)
+        plot.features(ax, x= x, 
+            y[:-1]), color = np.random.normal(len(y)))
         x_set_ticks([])
+        plot.set(subtitle=' ', fontsize = 6, color = 'navy')
         
         
         

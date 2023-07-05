@@ -8,7 +8,7 @@ import matplotlib as mlb
 import matplotlib.pyplot as plt
 import matplotlib.pyplot.make_subplot 
 import pyplot.express as pe
-from matplotlib.color import listedpastel
+from matplotlib.color import listedcolormap
 
 #2 create class:
 Class PlotFigure:
@@ -16,10 +16,10 @@ Class PlotFigure:
                     dpi=100, ls = '++++', Edgecolor = 'r',
                     color = 'b', loc='best',
                     tight_layout= true,
-                    orientation = ' MTFO' )
+                    orientation = ' MTFO ' )
                     .figtext(0.99, 0.01, u'\u00a9 PalindromicQ Designs 2023'
                     c = 'r'
-                    prop={'family':'Monotype Corsiva'}
+                    prop={'family':'Monotype Corsiva','font-color':'navy';'font-style':'italic'}
                     fontsize= 11,
                     va='ha',
                     alphaframe =0.3,
@@ -36,8 +36,7 @@ Class PlotFigure:
                                 'Fourth Picture'], loc='best', fontsize=11, c='r' """)
                            .subplot_set(title=' ', xlabel= ' ', ylabel = ' ')
                            )
-        For i in figsMosaic do:
-            axes[:-1] = axes[i]
+        axes[::i] For i in subplots_Mosaic().get_items()[:] : 
                
         labelled_pic = [y, for y in labelled_pic zip(y.tranpose(('Nope','EnjoyLife','Donated','CatchSomeMarlins'),
                                  ('b','r','y','g'))]            
